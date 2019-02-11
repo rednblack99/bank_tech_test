@@ -9,7 +9,7 @@ describe Account do
   end
 
   it "can show the user's balance" do
-    expect(@account.show_balance).to eq("Your balance is £0")
+    expect(@account.show_balance).to eq("date || credit || debit || balance\n")
   end
 
   it 'can accept withdrawing funds with time-code' do

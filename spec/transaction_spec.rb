@@ -3,7 +3,7 @@ describe Transaction do
   context 'can read the' do
 
     before(:each) do
-      @transaction = Transaction.new(1000, "01/01/2001", true)
+      @transaction = Transaction.new(1000, "01/01/2001", true, 1000)
     end
 
     it 'date' do
