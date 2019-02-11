@@ -20,7 +20,7 @@ class Account
 
   def show_balance
     balance_display = @transaction_history.print_history
-    p balance_display
+    puts balance_display
   end
 
 end
