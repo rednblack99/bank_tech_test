@@ -4,16 +4,16 @@ describe Account do
     @account = Account.new
   end
 
-  it "can accept a user deposit" do
-    expect(@account.deposit(1000)).to eq("Thank you for depositing £1000")
+  it "can accept a user deposit with time-code" do
+    expect(@account.deposit(1000, Time.new(2019,01,01))).to eq("Thank you for depositing £1000, on 01/01/2019")
   end
 
   it "can show the user's balance" do
     expect(@account.show_balance).to eq("Your balance is £0")
   end
 
-  it 'can accept withdrawing funds' do
-    expect(@account.withdraw(500)).to eq("Thank you for withdrawing £500")
+  it 'can accept withdrawing funds with time-code' do
+    expect(@account.withdraw(500, Time.new(2019,01,01))).to eq("Thank you for withdrawing £500, on 01/01/2019")
   end
 
 end

@@ -12,4 +12,5 @@ describe Account do
     @account.withdraw(500)
     expect(@account.show_balance).to eq("Your balance is £500")
   end
+
 end
