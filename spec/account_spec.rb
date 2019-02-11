@@ -12,4 +12,8 @@ describe Account do
     expect(@account.show_balance).to eq("Your balance is £0")
   end
 
+  it 'can accept withdrawing funds' do
+    expect(@account.withdraw(500)).to eq("Thank you for withdrawing £500")
+  end
+
 end

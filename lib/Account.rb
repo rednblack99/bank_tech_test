@@ -12,4 +12,9 @@ class Account
     p "Your balance is £#{@balance}"
   end
 
+  def withdraw(value)
+    @balance -= value
+    p "Thank you for withdrawing £#{value}"
+  end
+
 end
