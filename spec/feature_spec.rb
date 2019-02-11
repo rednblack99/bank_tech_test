@@ -1,7 +1,7 @@
 describe Account do
   before(:each) do
     @account = Account.new
-    @account.deposit(1000)
+    @account.deposit(1000, Time.new(2019, 02, 11))
   end
   
   it 'allows the user to make a deposit' do
@@ -9,7 +9,7 @@ describe Account do
   end
 
   it 'allows the user to withdraw funds' do
-    @account.withdraw(500)
+    @account.withdraw(500, Time.new(2019, 02, 11))
     expect(@account.show_balance).to eq("date || credit || debit || balance\n11/02/2019 || || 500.00 || 500.00\n11/02/2019 || 1000.00 || || 1000.00\n")
   end
 
