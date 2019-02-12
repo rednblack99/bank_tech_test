@@ -1,7 +1,7 @@
 describe TransactionHistory do
 
   before(:each) do
-    @transaction = Transaction.new(1000, "01/01/2001", true, 1000)
+    @transaction = Transaction.new("01/01/2001", nil, 1000, 1000)
     @transaction_double = "hello, world"
     @transaction_history = TransactionHistory.new
   end

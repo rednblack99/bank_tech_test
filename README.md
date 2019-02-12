@@ -63,3 +63,5 @@ $ account.show_balance # Displays your balance and a record of all transactions
 ## Screenshot
 
 ![Banking Tech Test Screenshot](https://i.imgur.com/8UNqliN.png)
+
+![Current Test Results and Coverage](https://i.imgur.com/dQIo62E.png)
