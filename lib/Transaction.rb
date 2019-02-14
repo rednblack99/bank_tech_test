@@ -16,5 +16,4 @@ class Transaction
   def debit?
     @debit != nil ? @debit.to_s + ".00 " : nil
   end
-
 end

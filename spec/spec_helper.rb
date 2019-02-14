@@ -1,6 +1,3 @@
-require 'account.rb'
-require 'Transaction.rb'
-require 'TransactionHistory.rb'
 require 'simplecov'
 require 'simplecov-console'
 

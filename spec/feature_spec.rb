@@ -1,3 +1,5 @@
+require 'account.rb'
+
 describe Account do
   before(:each) do
     @account = Account.new

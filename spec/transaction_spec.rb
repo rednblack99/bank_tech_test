@@ -1,3 +1,5 @@
+require 'transaction.rb'
+
 describe Transaction do
 
   context 'can read the' do
