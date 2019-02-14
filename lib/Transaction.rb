@@ -10,10 +10,16 @@ class Transaction
   end
 
   def credit?
-    @credit != nil ? @credit.to_s + ".00 " : nil
+    format(@credit)
   end
 
   def debit?
-    @debit != nil ? @debit.to_s + ".00 " : nil
+    format(@debit) 
+  end
+
+  private
+
+  def format(amount)
+    amount != nil ? amount.to_s + ".00 " : nil # look up strformat
   end
 end
